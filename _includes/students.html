@@ -1,0 +1,57 @@
+{% assign students = site.data.data.students %}
+{% if students %}
+<section class="section publications-section">
+
+  <h2 class="section-title">
+    <!-- <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span> -->
+    {{ students.title }}
+  </h2>
+  <hr>
+
+  <!-- get MSc students -->
+  {% assign mscStudent = students.student | where:"level", "MSc" %}
+  <h4 class="student level">MSc</h4>
+  
+  {{mscStudent.name}}
+  <ol>
+  {% for learner in mscStudent %}
+  <div class="item">
+    
+    {% if learner.link %}
+      <li class="publication-title"><a href="{{ learner.link }}" target="_blank">{{ learner.title }}</a></li>
+    {% else %}
+      <li class="publication-title">{{ learner.title }}</li>
+    {% endif %}
+    
+    <div class="publication-authors">{{ learner.name }} {{learner.year}}</div>
+    {% if learner.passType %}
+    <div class="publication-authors">({{learner.passType}})</div>
+    {% endif %}
+    <!-- <div class="publication-conference">{{ publication.conference }}</div> -->
+  </div><!--//item-->
+  {% endfor %}
+  </ol>
+
+  <!-- get PhD students -->
+  {% assign phdStudent = students.student | where:"level", "PhD" %}
+  <h4 class="student level">PhD</h4>
+  <ol>
+  {% for learner in phdStudent %}
+  <div class="item">
+    
+    {% if learner.link %}
+      <li class="publication-title"><a href="{{ learner.link }}" target="_blank">{{ learner.title }}</a></li>
+    {% else %}
+      <li class="publication-title">{{ learner.title }}</li>
+    {% endif %}
+    
+    <div class="publication-authors">{{ learner.name }} {{learner.year}}</div>
+    <!-- <div class="publication-conference">{{ publication.conference }}</div> -->
+  </div><!--//item-->
+  {% endfor %}
+  </ol> 
+</section><!--//section-->
+{% endif %}
