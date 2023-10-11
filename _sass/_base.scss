@@ -1,6 +1,6 @@
 /* ======= Base ======= */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: $text-color-secondary;
   background: $smoky-white;
   font-size: 14px;
@@ -15,9 +15,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 300;
 }
 
+hr {
+  border: 0.5px solid $theme-color;
+}
 a {
   color: darken($theme-color, 15%);
   &:hover {
@@ -27,7 +30,23 @@ a {
   &:focus {
     text-decoration: none;
   }
+  
 }
+
+.leadership{
+  a {
+    font-style: italic;
+    color: $text-grey;
+    &:hover {
+      text-decoration: underline;
+      color: darken($theme-color, 30%);
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
 
 p {
   line-height: 1.5;
@@ -45,7 +64,7 @@ p {
 
 .sidebar-wrapper {
   grid-column: span 3;
-  order: $sidebar-order;
+  order: 2;
   background: $theme-color;
   color: #fff;
   a {
@@ -108,7 +127,7 @@ p {
     margin-top: 0;
     margin-bottom: 15px;
   }
-  .degree {
+  .degree  {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 5px;
@@ -161,7 +180,6 @@ p {
 
 .main-wrapper {
   grid-column: span 7;
-  order: $resume-order;
   background: #fff;
   padding: 60px;
   .section-title {
@@ -183,43 +201,60 @@ p {
       margin-bottom: 30px;
     }
   }
-  .upper-row,
-  .second-upper-row {
+  .upper-row {
+    border-spacing: 10px;
+    
     position: relative;
     overflow: hidden;
     margin-bottom: 2px;
-    display: flex;
+  }
+  .left{
+    width: 75%;
+  }
+  .right{
+    width:25%;
+    text-align: right;
+  }
+  .left3{
+    width: 33%;
+  }
+  .middle3{
+    width: 33%;
+  }
+  .right3{
+    width:33%;
+    text-align: right;
+  }
+  .column {
+    float: left;
+    // padding: 10px;
+    // height: 300px; /* Should be removed. Only for demonstration */
   }
   .job-title,
-  .degree,
-  .cert-title{
+  .degree {
     color: $text-color;
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
-    flex: 75%;
   }
-  .time,
-  .cert-url {
+  .time {
     position: absolute;
     right: 0;
     top: 0;
     color: $text-grey;
-    flex: 25%;
   }
   .company,
-  .university,
-  .cert-org {
+  .university {
     margin-bottom: 10px;
     color: $text-grey;
   }
 
   .project-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     color: darken($theme-color, 15%);
   }
   .projects-section {
@@ -227,15 +262,56 @@ p {
       margin-bottom: 30px;
     }
     .item {
-      margin-bottom: 15px;
+      font-style: italic;
+      color: $text-grey;
+      margin-bottom: 1px;
+    }
+    .amount {position: absolute;
+    right: 0;
+    top: 0;
+    color: $text-grey;
     }
   }
+  .awards-section {
+    .award-title {
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 1px;
+      color: darken($theme-color, 15%);
+    }
 
+    .intro {
+      margin-bottom: 30px;
+    }
+    .item {
+      font-style: italic;
+      color: $text-grey;
+      margin-bottom: 1px;
+    }
+    
+    
+  }
+  .amount {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $text-grey;
+  }
+  .course-section {
+    .right {
+      width: 60%
+    }
+    .left {
+      width: 40%
+    }
+  }
   .publication-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: $text-color;
     margin-bottom: 1px;
+    text-transform: capitalize;
   }
   .publication-authors {
     font-style: italic;
@@ -284,4 +360,3 @@ p {
     color: $heart;
   }
 }
-
