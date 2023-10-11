@@ -1,0 +1,121 @@
+{% assign leader = site.data.data.leadership %}
+{% if projects %}
+<section class="section projects-section">
+
+  <h2 class="section-title">
+    <!-- <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span> -->
+    {{ leader.title }}
+  </h2>
+  <hr>
+  {% if leader.intro %}
+  <div class="intro">
+      <p>{{ leader.intro }}</p>
+  </div><!--//intro-->
+  {% endif %}
+
+  {% assign research = leader.type | where:"title", "Research" %}
+  <div class="project-title">  Research</div>
+
+  {% for item in research %}
+  <div class="item">
+    <div class="upper-row">
+      <div class="column left leadership">
+        
+          {% if item.link %}
+          <a class="tagline" href="{{ item.link }}" target="_blank">{{ item.description }}</a>
+          {% else %}
+          {{ item.description }}
+          {% endif %}
+        
+
+        <!-- {% if item.description %}
+         <div class="award-tagline">{{ item.description }}</div>
+        {% endif %} -->
+
+      </div><!--//lefft-->
+      <div class = "column right"> {{item.time}}</div>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% assign uni = leader.type | where:"title", "University" %}
+  <div class="project-title">  University</div>
+
+  {% for item in uni %}
+  <div class="item">
+    <div class="upper-row">
+      <div class="column left leadership">
+        
+          {% if item.link %}
+          <a class="tagline" href="{{ item.link }}" target="_blank">{{ item.description }}</a>
+          {% else %}
+          {{ item.description }}
+          {% endif %}
+        
+
+        <!-- {% if item.description %}
+         <div class="award-tagline">{{ item.description }}</div>
+        {% endif %} -->
+
+      </div><!--//lefft-->
+      <div class = "column right"> {{item.time}}</div>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% assign com = leader.type | where:"title", "Community Service" %}
+  <div class="project-title">  Community Service</div>
+
+  {% for item in com %}
+  <div class="item">
+    <div class="upper-row">
+      <div class="column left leadership">
+        
+          {% if item.link %}
+          <a class="tagline" href="{{ item.link }}" target="_blank">{{ item.description }}</a>
+          {% else %}
+          {{ item.description }}
+          {% endif %}
+        
+
+        <!-- {% if item.description %}
+         <div class="award-tagline">{{ item.description }}</div>
+        {% endif %} -->
+
+      </div><!--//lefft-->
+      <div class = "column right"> {{item.time}}</div>
+    </div>
+  </div>
+  {% endfor %}
+
+  {% assign prof = leader.type | where:"title", "Professional" %}
+  <div class="project-title">  Professional</div>
+
+  {% for item in prof %}
+  <div class="item">
+    <div class="upper-row">
+      <div class="column left leadership">
+        
+          {% if item.link %}
+          <a class="tagline" href="{{ item.link }}" target="_blank">{{ item.description }}</a>
+          {% else %}
+          {{ item.description }}
+          {% endif %}
+        
+
+        <!-- {% if item.description %}
+         <div class="award-tagline">{{ item.description }}</div>
+        {% endif %} -->
+
+      </div><!--//lefft-->
+      <div class = "column right"> {{item.time}}</div>
+    </div>
+  </div>
+  {% endfor %}
+  
+
+</section><!--//section-->
+{% endif %}
