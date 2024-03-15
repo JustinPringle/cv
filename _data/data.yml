@@ -55,10 +55,11 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Vision: To develop meaningful solutions to global grand challenges using Environmental Fluid Mechanics <br>
-      NRF-Y researcher, rated as "young researcher having the potential to establish themself as a researcher" in Fluid Mechanics. 
-      Current Position: Senior Lecturer. 
-      Co-Head environmental fluid mechanics research group at UKZN ("https://efml.ukzn.ac.za").
+      Vision: To nuture a higher more profound sense of service and engineering entrepreneurship intended towards solving global grand challenges using Environmental Fluid Mechanics. <br>
+      NRF-Y researcher, rated as "young researcher having the potential to establish themself as a researcher" in Fluid Mechanics.<br>
+      Professionally registered engineer with ECSA (202402862)<br>
+      Current Position: Senior Lecturer. <br>
+      Co-Head environmental fluid mechanics research group at UKZN ("https://efml.ukzn.ac.za").<br>
       Areas of current research: Coastal processes, Climate change, Renewable energy, fundamentals of fluid mechanics. 
 
 
@@ -101,7 +102,7 @@ education:
       details: |
         
 experiences:
-    - role: Senior Lecturer (PrENG)
+    - role: Senior Lecturer
       time: 2021 - Present
       company: University of KwaZulu Natal, South Africa
       details: |
@@ -380,7 +381,19 @@ students:
       year: (Submission Expected)
       title: A Modernised Flood Prediction Model To Support Flood Forecasting and Dam Operations In South Africa
       level: PhD
-      link: https://efml.ukzn.ac.za
+      link: https://efml.ukzn.ac.za/jeremy/
+    
+    - name: Yashmika Ramlakan
+      year: (Submission Expected)
+      title: The inconspicuous poison. An investigation of microplastic sources - A case study on the Umgeni River, Durban, KwaZulu-Natal.
+      level: PhD
+      link: https://efml.ukzn.ac.za/yashmika/
+    
+    - name: Danel Capelo
+      year: (Submission Expected)
+      title: On the design of hydrokites to harness ocean current energy
+      level: PhD
+      link: https://efml.ukzn.ac.za/danel/
 
 awards:
   title: Grants & Awards 
