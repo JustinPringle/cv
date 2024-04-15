@@ -190,6 +190,12 @@ publications:
     intro: |
       
     papers:
+      - title: "Upwelling along the southeast African coastline and links to cold water temperature anomalies at Sodwana Bay, South Africa"
+        link: "https://www.sciencedirect.com/science/article/pii/S0278434324000578"
+        type: journal
+        authors: Wells C., Pringle J., Stretch D. (2024)
+        conference: "Continental Shelf Research" 
+
       - title: "Cold water pathways and regional flow patterns in the southwest Indian ocean associated with temperature anomalies on the Sodwana reef system, South Africa"
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0272771423001270?via%3Dihub"
         type: journal
@@ -365,17 +371,17 @@ students:
     #   level: MSc
     #   link: https://efml.ukzn.ac.za
 
+    - name: Calvin Wells
+      year: (2024)
+      title: The study of sub-meso scale flow regimes along the Coral Reefs of KwaZulu Natal
+      level: PhD
+      link: https://efml.ukzn.ac.za/calvin/
+
     - name: Atish Deoraj
       year: "(Submission Expected)"
       title: On the Hydrodynamics of Coral Reefs.
       level: "PhD"
-      link: https://efml.ukzn.ac.za/atish/
-
-    - name: Calvin Wells
-      year: (Under Examination)
-      title: The study of sub-meso scale flow regimes along the Coral Reefs of KwaZulu Natal
-      level: PhD
-      link: https://efml.ukzn.ac.za/calvin/
+      link: https://efml.ukzn.ac.za/atish/   
 
     - name: Jeremy Naidoo
       year: (Submission Expected)
